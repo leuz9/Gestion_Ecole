@@ -1,0 +1,89 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <meta name="viewport" content="width=device-width, initialscale=1. 0">
+    <meta charset="UTF-8">
+
+    <title> LYCEE D'EXCELLENCE</title>
+</head>
+<body class="fond">
+<div class="fond2">
+</div>
+
+<ul id="menu-demo2">
+    <li><a href="ecole.html">ACCUEIL</a>
+
+    </li>
+    <li><a href="admission.html">ADMISSION</a>
+        <ul>
+            <li><a href="critAdmission.html">CRITERES D'ADMISSION</a></li>
+            <li><a href="proAdmission.html">PROCEDURES</a></li>
+            <li><a href="frAdmission.html">FRAIS DE SCOLARITE</a></li>
+            <li><a href="ctAdmission.html">CONTACT D'AMISSION</a></li>
+        </ul>
+    </li>
+    <li><a href="#">CALENDRIER</a>
+		<ul>
+			<li><a href="connexion.html">EMPLOI DU TEMPS</a></li>
+			<li><a href="connexion.html">REGLEMENT INTERIEUR</a></li>
+			<li><a href="connexion.html">EXAMEN</a></li>
+		</ul>
+	</li>
+	<li><a href="#">ADMINISTRATION</a>
+		<ul>
+			<li><a href="connexion.html">GESTION DES PROFESSEURS</a></li>
+			<li><a href="connexion.html">GESTION DES PARENTS</a></li>
+			<li><a href="connexion.html">GESTION DES ELEVES</a></li>
+			<li><a href="connexion.html">GESTION DES SALLES</a></li>
+			<li><a href="connexion.html">GESTION DU CALANDRIER SCOLAIRE</a></li>
+		</ul>
+    </li>
+    <li><a href="connexion.html">SE CONNECTER</a>
+</ul>
+<br>
+<h1 class="inputbasic">Page de Connexion</h1>
+
+<button onclick="document.getElementById('id01').style.display='block'" class="inputbasic">Cliquez ici</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="image/avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

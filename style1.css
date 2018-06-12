@@ -1,0 +1,59 @@
+
+
+.inputbasic {
+	color: yellow;
+
+	padding: 25px;
+	transition: all 0.5s ease;
+}
+
+.inputbasic:hover{
+	background-color: yellow;
+	color: blue;
+	font-size: 26px;
+}
+
+
+
+label {
+  /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* Afin de s'assurer que tous les champs textuels utilisent la même police
+     Par défaut, textarea utilise une police à espacement constant */
+  font: 1em sans-serif;
+
+  /* Pour donner la même dimension à tous les champs textuels */
+  width: 300px;
+
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  /* Pour harmoniser l'apparence des bordures des champs textuels */
+  border: 1px solid #999;
+}
+
+
+
+.button {
+  /* Pour positionner les boutons de la même manière que les champs textuels */
+  /* même dimension que les étiquettes */
+  background-color: green;
+  border: 3px solid grey;
+	border-radius:2px;
+	padding: 5px;
+	color: white;
+	transition: all 0.8s ease;margin-left: 5em;
+}
+
+.button:hover{
+	background-color: white;
+	color: green;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
